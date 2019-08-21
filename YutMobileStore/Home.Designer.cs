@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.LogOut = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LabelMenu = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.ProductInfo = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -74,16 +74,16 @@
             this.LogOut.Text = "LogOut";
             this.LogOut.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // LabelMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Candara", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(514, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 59);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Main Menu";
+            this.LabelMenu.AutoSize = true;
+            this.LabelMenu.Font = new System.Drawing.Font("Candara", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelMenu.ForeColor = System.Drawing.Color.Black;
+            this.LabelMenu.Location = new System.Drawing.Point(514, 69);
+            this.LabelMenu.Name = "LabelMenu";
+            this.LabelMenu.Size = new System.Drawing.Size(256, 59);
+            this.LabelMenu.TabIndex = 11;
+            this.LabelMenu.Text = "Main Menu";
             // 
             // panel9
             // 
@@ -162,6 +162,7 @@
             this.Attendance.TabIndex = 3;
             this.Attendance.Text = "Attendance";
             this.Attendance.UseVisualStyleBackColor = false;
+            this.Attendance.Click += new System.EventHandler(this.Attendance_Click);
             // 
             // panel6
             // 
@@ -188,6 +189,7 @@
             this.Stock.TabIndex = 3;
             this.Stock.Text = "Edit Stock";
             this.Stock.UseVisualStyleBackColor = false;
+            this.Stock.Click += new System.EventHandler(this.Stock_Click);
             // 
             // panel5
             // 
@@ -214,6 +216,7 @@
             this.Sale.TabIndex = 3;
             this.Sale.Text = "Sale";
             this.Sale.UseVisualStyleBackColor = false;
+            this.Sale.Click += new System.EventHandler(this.Sale_Click);
             // 
             // panel4
             // 
@@ -240,6 +243,7 @@
             this.Ledger.TabIndex = 3;
             this.Ledger.Text = "Ledger";
             this.Ledger.UseVisualStyleBackColor = false;
+            this.Ledger.Click += new System.EventHandler(this.Ledger_Click);
             // 
             // panel3
             // 
@@ -266,6 +270,7 @@
             this.Accessories.TabIndex = 3;
             this.Accessories.Text = "Add Accessories";
             this.Accessories.UseVisualStyleBackColor = false;
+            this.Accessories.Click += new System.EventHandler(this.Accessories_Click);
             // 
             // panel2
             // 
@@ -292,6 +297,7 @@
             this.Phones.TabIndex = 3;
             this.Phones.Text = "Add Phones";
             this.Phones.UseVisualStyleBackColor = false;
+            this.Phones.Click += new System.EventHandler(this.Phones_Click);
             // 
             // InventoryPanel
             // 
@@ -318,6 +324,7 @@
             this.Inventory.TabIndex = 3;
             this.Inventory.Text = "Inventory";
             this.Inventory.UseVisualStyleBackColor = false;
+            this.Inventory.Click += new System.EventHandler(this.Inventory_Click);
             // 
             // Home
             // 
@@ -325,7 +332,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelMenu);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -374,6 +381,6 @@
         private System.Windows.Forms.Button Reports;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button ProductInfo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LabelMenu;
     }
 }
