@@ -32,6 +32,7 @@
             this.Password = new System.Windows.Forms.Label();
             this.PassText = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Username = new System.Windows.Forms.Label();
             this.LoginButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -43,7 +44,7 @@
             this.UserText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UserText.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserText.ForeColor = System.Drawing.Color.Black;
-            this.UserText.Location = new System.Drawing.Point(120, 175);
+            this.UserText.Location = new System.Drawing.Point(120, 293);
             this.UserText.Name = "UserText";
             this.UserText.Size = new System.Drawing.Size(250, 31);
             this.UserText.TabIndex = 1;
@@ -53,7 +54,7 @@
             this.Password.AutoSize = true;
             this.Password.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Password.Location = new System.Drawing.Point(115, 221);
+            this.Password.Location = new System.Drawing.Point(115, 338);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(106, 26);
             this.Password.TabIndex = 0;
@@ -65,7 +66,7 @@
             this.PassText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PassText.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PassText.ForeColor = System.Drawing.Color.Black;
-            this.PassText.Location = new System.Drawing.Point(120, 269);
+            this.PassText.Location = new System.Drawing.Point(120, 378);
             this.PassText.Name = "PassText";
             this.PassText.Size = new System.Drawing.Size(250, 31);
             this.PassText.TabIndex = 1;
@@ -73,22 +74,32 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.Username);
             this.panel1.Controls.Add(this.LoginButton);
             this.panel1.Controls.Add(this.UserText);
             this.panel1.Controls.Add(this.PassText);
             this.panel1.Controls.Add(this.Password);
-            this.panel1.Location = new System.Drawing.Point(441, 137);
+            this.panel1.Location = new System.Drawing.Point(442, 99);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 465);
+            this.panel1.Size = new System.Drawing.Size(485, 538);
             this.panel1.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::YutMobileStore.Properties.Resources.logo;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(145, 63);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 161);
+            this.panel2.TabIndex = 5;
             // 
             // Username
             // 
             this.Username.AutoSize = true;
             this.Username.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Username.Location = new System.Drawing.Point(115, 130);
+            this.Username.Location = new System.Drawing.Point(115, 255);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(109, 26);
             this.Username.TabIndex = 4;
@@ -101,7 +112,7 @@
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginButton.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LoginButton.Location = new System.Drawing.Point(120, 337);
+            this.LoginButton.Location = new System.Drawing.Point(120, 436);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(250, 41);
             this.LoginButton.TabIndex = 2;
@@ -132,6 +143,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Username;
         private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

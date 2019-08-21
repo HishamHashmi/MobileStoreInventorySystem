@@ -31,9 +31,10 @@
             this.inventoryTitle = new System.Windows.Forms.Label();
             this.LogOut = new System.Windows.Forms.Button();
             this.PanelInventory = new System.Windows.Forms.Panel();
+            this.LabelCategory = new System.Windows.Forms.Label();
             this.inventorydetails = new System.Windows.Forms.DataGridView();
             this.Categories = new System.Windows.Forms.ComboBox();
-            this.LabelCategory = new System.Windows.Forms.Label();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.PanelInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventorydetails)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +75,16 @@
             this.PanelInventory.Size = new System.Drawing.Size(964, 551);
             this.PanelInventory.TabIndex = 4;
             // 
+            // LabelCategory
+            // 
+            this.LabelCategory.AutoSize = true;
+            this.LabelCategory.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCategory.Location = new System.Drawing.Point(129, 24);
+            this.LabelCategory.Name = "LabelCategory";
+            this.LabelCategory.Size = new System.Drawing.Size(160, 26);
+            this.LabelCategory.TabIndex = 5;
+            this.LabelCategory.Text = "Select Category:";
+            // 
             // inventorydetails
             // 
             this.inventorydetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -91,21 +102,28 @@
             this.Categories.Size = new System.Drawing.Size(693, 31);
             this.Categories.TabIndex = 3;
             // 
-            // LabelCategory
+            // BackBtn
             // 
-            this.LabelCategory.AutoSize = true;
-            this.LabelCategory.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCategory.Location = new System.Drawing.Point(129, 24);
-            this.LabelCategory.Name = "LabelCategory";
-            this.LabelCategory.Size = new System.Drawing.Size(160, 26);
-            this.LabelCategory.TabIndex = 5;
-            this.LabelCategory.Text = "Select Category:";
+            this.BackBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.BackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackBtn.FlatAppearance.BorderSize = 0;
+            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBtn.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Location = new System.Drawing.Point(1140, 1);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(110, 45);
+            this.BackBtn.TabIndex = 18;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.PanelInventory);
             this.Controls.Add(this.LogOut);
             this.Controls.Add(this.inventoryTitle);
@@ -127,5 +145,6 @@
         private System.Windows.Forms.Label LabelCategory;
         private System.Windows.Forms.DataGridView inventorydetails;
         private System.Windows.Forms.ComboBox Categories;
+        private System.Windows.Forms.Button BackBtn;
     }
 }

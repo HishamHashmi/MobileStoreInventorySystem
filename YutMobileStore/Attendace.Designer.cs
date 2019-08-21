@@ -32,13 +32,14 @@
             this.panelAttendance = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SalaryBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LabelDate = new System.Windows.Forms.Label();
             this.LabelEmployee = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.SalaryBtn = new System.Windows.Forms.Button();
             this.LogOut = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.panelAttendance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -59,9 +60,9 @@
             // 
             this.panelAttendance.BackColor = System.Drawing.Color.DarkGray;
             this.panelAttendance.Controls.Add(this.dataGridView1);
-            this.panelAttendance.Location = new System.Drawing.Point(31, 153);
+            this.panelAttendance.Location = new System.Drawing.Point(31, 140);
             this.panelAttendance.Name = "panelAttendance";
-            this.panelAttendance.Size = new System.Drawing.Size(668, 560);
+            this.panelAttendance.Size = new System.Drawing.Size(668, 540);
             this.panelAttendance.TabIndex = 14;
             // 
             // dataGridView1
@@ -81,10 +82,25 @@
             this.panel1.Controls.Add(this.LabelEmployee);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(720, 153);
+            this.panel1.Location = new System.Drawing.Point(720, 140);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(622, 560);
+            this.panel1.Size = new System.Drawing.Size(622, 540);
             this.panel1.TabIndex = 15;
+            // 
+            // SalaryBtn
+            // 
+            this.SalaryBtn.BackColor = System.Drawing.Color.Black;
+            this.SalaryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SalaryBtn.FlatAppearance.BorderSize = 0;
+            this.SalaryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SalaryBtn.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalaryBtn.ForeColor = System.Drawing.Color.White;
+            this.SalaryBtn.Location = new System.Drawing.Point(175, 476);
+            this.SalaryBtn.Name = "SalaryBtn";
+            this.SalaryBtn.Size = new System.Drawing.Size(272, 39);
+            this.SalaryBtn.TabIndex = 16;
+            this.SalaryBtn.Text = "Compute Salary";
+            this.SalaryBtn.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -129,23 +145,8 @@
             // 
             this.panel2.Location = new System.Drawing.Point(32, 136);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(554, 344);
+            this.panel2.Size = new System.Drawing.Size(554, 329);
             this.panel2.TabIndex = 0;
-            // 
-            // SalaryBtn
-            // 
-            this.SalaryBtn.BackColor = System.Drawing.Color.Black;
-            this.SalaryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SalaryBtn.FlatAppearance.BorderSize = 0;
-            this.SalaryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SalaryBtn.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalaryBtn.ForeColor = System.Drawing.Color.White;
-            this.SalaryBtn.Location = new System.Drawing.Point(153, 486);
-            this.SalaryBtn.Name = "SalaryBtn";
-            this.SalaryBtn.Size = new System.Drawing.Size(324, 51);
-            this.SalaryBtn.TabIndex = 16;
-            this.SalaryBtn.Text = "Compute Salary";
-            this.SalaryBtn.UseVisualStyleBackColor = false;
             // 
             // LogOut
             // 
@@ -162,11 +163,28 @@
             this.LogOut.Text = "LogOut";
             this.LogOut.UseVisualStyleBackColor = false;
             // 
+            // BackBtn
+            // 
+            this.BackBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.BackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackBtn.FlatAppearance.BorderSize = 0;
+            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBtn.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Location = new System.Drawing.Point(1140, 1);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(110, 45);
+            this.BackBtn.TabIndex = 17;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // Attendace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.LogOut);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelAttendance);
@@ -196,5 +214,6 @@
         private System.Windows.Forms.Label LabelDate;
         private System.Windows.Forms.Button SalaryBtn;
         private System.Windows.Forms.Button LogOut;
+        private System.Windows.Forms.Button BackBtn;
     }
 }

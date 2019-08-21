@@ -16,5 +16,12 @@ namespace YutMobileStore
         {
             InitializeComponent();
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home H = new Home();
+            H.Show();
+        }
     }
 }

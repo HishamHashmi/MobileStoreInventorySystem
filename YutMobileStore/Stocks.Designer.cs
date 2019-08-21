@@ -30,10 +30,11 @@
         {
             this.LabelStock = new System.Windows.Forms.Label();
             this.PanelStock = new System.Windows.Forms.Panel();
+            this.StockGridView = new System.Windows.Forms.DataGridView();
             this.ComboSearch = new System.Windows.Forms.ComboBox();
             this.LabelSearch = new System.Windows.Forms.Label();
-            this.StockGridView = new System.Windows.Forms.DataGridView();
             this.LogOut = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.PanelStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StockGridView)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,14 @@
             this.PanelStock.Size = new System.Drawing.Size(995, 544);
             this.PanelStock.TabIndex = 13;
             // 
+            // StockGridView
+            // 
+            this.StockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StockGridView.Location = new System.Drawing.Point(140, 111);
+            this.StockGridView.Name = "StockGridView";
+            this.StockGridView.Size = new System.Drawing.Size(725, 406);
+            this.StockGridView.TabIndex = 13;
+            // 
             // ComboSearch
             // 
             this.ComboSearch.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,14 +89,6 @@
             this.LabelSearch.TabIndex = 12;
             this.LabelSearch.Text = "Search:";
             // 
-            // StockGridView
-            // 
-            this.StockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StockGridView.Location = new System.Drawing.Point(140, 111);
-            this.StockGridView.Name = "StockGridView";
-            this.StockGridView.Size = new System.Drawing.Size(725, 406);
-            this.StockGridView.TabIndex = 13;
-            // 
             // LogOut
             // 
             this.LogOut.BackColor = System.Drawing.Color.Black;
@@ -103,11 +104,28 @@
             this.LogOut.Text = "LogOut";
             this.LogOut.UseVisualStyleBackColor = false;
             // 
+            // BackBtn
+            // 
+            this.BackBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.BackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackBtn.FlatAppearance.BorderSize = 0;
+            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBtn.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Location = new System.Drawing.Point(1140, 1);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(110, 45);
+            this.BackBtn.TabIndex = 18;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // Stocks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.LogOut);
             this.Controls.Add(this.PanelStock);
             this.Controls.Add(this.LabelStock);
@@ -130,5 +148,6 @@
         private System.Windows.Forms.ComboBox ComboSearch;
         private System.Windows.Forms.Label LabelSearch;
         private System.Windows.Forms.Button LogOut;
+        private System.Windows.Forms.Button BackBtn;
     }
 }

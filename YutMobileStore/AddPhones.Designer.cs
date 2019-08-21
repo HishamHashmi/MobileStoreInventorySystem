@@ -51,6 +51,7 @@
             this.LabelModel = new System.Windows.Forms.Label();
             this.Labelbrand = new System.Windows.Forms.Label();
             this.LogOut = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage)).BeginInit();
             this.SuspendLayout();
@@ -314,11 +315,28 @@
             this.LogOut.Text = "LogOut";
             this.LogOut.UseVisualStyleBackColor = false;
             // 
+            // BackBtn
+            // 
+            this.BackBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.BackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackBtn.FlatAppearance.BorderSize = 0;
+            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBtn.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Location = new System.Drawing.Point(1140, 1);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(110, 45);
+            this.BackBtn.TabIndex = 19;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // AddPhones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.LogOut);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LabelPhones);
@@ -358,5 +376,6 @@
         private System.Windows.Forms.Label LabelDate;
         private System.Windows.Forms.TextBox TextUnits;
         private System.Windows.Forms.Button LogOut;
+        private System.Windows.Forms.Button BackBtn;
     }
 }
