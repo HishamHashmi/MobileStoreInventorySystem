@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YutMobileStore
 {
-    public partial class Home : Form
+    public partial class EmployeeMenu : Form
     {
-        public Home()
+        public EmployeeMenu()
         {
             InitializeComponent();
         }
@@ -23,61 +23,60 @@ namespace YutMobileStore
             Inventory I = new Inventory();
             I.Show();
         }
+     
+        private void LogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login L = new Login();
+            L.Show();
+        }
 
-        private void Phones_Click(object sender, EventArgs e)
+        private void Phones_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             AddPhones AP = new AddPhones();
             AP.Show();
+
         }
 
-        private void Accessories_Click(object sender, EventArgs e)
+        private void Accessories_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             AddAccessories AA = new AddAccessories();
             AA.Show();
         }
 
-        private void Ledger_Click(object sender, EventArgs e)
+        private void Ledger_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Ledger L = new Ledger();
             L.Show();
         }
 
-        private void Sale_Click(object sender, EventArgs e)
+        private void Sale_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Sales S = new Sales();
             S.Show();
         }
 
-        private void Stock_Click(object sender, EventArgs e)
+        private void Stock_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Stocks St = new Stocks();
             St.Show();
         }
 
-        private void Attendance_Click(object sender, EventArgs e)
+        private void Reports_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Attendace A = new Attendace();
-            A.Show();
+        
         }
 
         private void ProductInfo_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ProductInfo P = new ProductInfo();
-            P.Show();
-        }
-
-        private void LogOut_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login L = new Login();
-            L.Show();
+            ProductInfo St = new ProductInfo();
+            St.Show();
         }
     }
 }

@@ -19,9 +19,26 @@ namespace YutMobileStore
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
+            
+            if (loginfo.userIdentify == "Admin")
+            {
+                this.Hide();
+                Home H = new Home();
+                H.Show();
+            }
+            else if (loginfo.userIdentify == "Employee")
+            {
+                this.Hide();
+                EmployeeMenu EM = new EmployeeMenu();
+                EM.Show();
+            }
+        }
+
+        private void LogOut_Click(object sender, EventArgs e)
+        {
             this.Hide();
-            Home H = new Home();
-            H.Show();
+            Login L = new Login();
+            L.Show();
         }
     }
 }

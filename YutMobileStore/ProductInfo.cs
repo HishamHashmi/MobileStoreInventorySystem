@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
+
 namespace YutMobileStore
 {
-    public partial class Inventory : Form
+    public partial class ProductInfo : Form
     {
-        public Inventory()
+        public ProductInfo()
         {
             InitializeComponent();
         }

@@ -274,6 +274,7 @@
             this.LogOut.TabIndex = 4;
             this.LogOut.Text = "LogOut";
             this.LogOut.UseVisualStyleBackColor = false;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
             // 
             // BackBtn
             // 
