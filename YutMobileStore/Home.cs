@@ -63,7 +63,7 @@ namespace YutMobileStore
         {
             this.Hide();
             Attendace A = new Attendace();
-            this.Show();
+            A.Show();
         }
     }
 }

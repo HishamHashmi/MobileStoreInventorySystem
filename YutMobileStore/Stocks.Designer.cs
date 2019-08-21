@@ -66,7 +66,7 @@
             this.ComboSearch.FormattingEnabled = true;
             this.ComboSearch.Location = new System.Drawing.Point(140, 60);
             this.ComboSearch.Name = "ComboSearch";
-            this.ComboSearch.Size = new System.Drawing.Size(715, 34);
+            this.ComboSearch.Size = new System.Drawing.Size(725, 34);
             this.ComboSearch.TabIndex = 0;
             // 
             // LabelSearch
