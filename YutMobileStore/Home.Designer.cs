@@ -46,7 +46,6 @@
             this.Phones = new System.Windows.Forms.Button();
             this.InventoryPanel = new System.Windows.Forms.Panel();
             this.Inventory = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Attendance = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9.SuspendLayout();
@@ -383,7 +382,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button ProductInfo;
         private System.Windows.Forms.Label LabelMenu;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button Attendance;
         private System.Windows.Forms.Panel panel7;
     }

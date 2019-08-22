@@ -33,25 +33,28 @@
             this.AddBtn = new System.Windows.Forms.Button();
             this.BrowseBtn = new System.Windows.Forms.Button();
             this.PhoneImage = new System.Windows.Forms.PictureBox();
-            this.ComboNewPhone = new System.Windows.Forms.RadioButton();
-            this.ComboOldPhone = new System.Windows.Forms.RadioButton();
+            this.RadioNewPhone = new System.Windows.Forms.RadioButton();
+            this.RadioOldPhone = new System.Windows.Forms.RadioButton();
             this.TextDate = new System.Windows.Forms.TextBox();
             this.TextBarcode = new System.Windows.Forms.TextBox();
+            this.TextVendor = new System.Windows.Forms.TextBox();
             this.TextUnits = new System.Windows.Forms.TextBox();
             this.TextPrice = new System.Windows.Forms.TextBox();
+            this.TextCompany = new System.Windows.Forms.TextBox();
             this.TextModel = new System.Windows.Forms.TextBox();
-            this.companyDropdown = new System.Windows.Forms.ComboBox();
             this.LabelDate = new System.Windows.Forms.Label();
             this.LabelBarcode = new System.Windows.Forms.Label();
             this.LabelNewPhone = new System.Windows.Forms.Label();
             this.LabelOldPhone = new System.Windows.Forms.Label();
             this.LabelCondition = new System.Windows.Forms.Label();
+            this.LabelVendor = new System.Windows.Forms.Label();
             this.LabelUnits = new System.Windows.Forms.Label();
             this.LabelPrice = new System.Windows.Forms.Label();
             this.LabelModel = new System.Windows.Forms.Label();
             this.Labelbrand = new System.Windows.Forms.Label();
             this.LogOut = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
+            this.TextPath = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage)).BeginInit();
             this.SuspendLayout();
@@ -72,19 +75,22 @@
             this.panel1.Controls.Add(this.AddBtn);
             this.panel1.Controls.Add(this.BrowseBtn);
             this.panel1.Controls.Add(this.PhoneImage);
-            this.panel1.Controls.Add(this.ComboNewPhone);
-            this.panel1.Controls.Add(this.ComboOldPhone);
+            this.panel1.Controls.Add(this.RadioNewPhone);
+            this.panel1.Controls.Add(this.RadioOldPhone);
             this.panel1.Controls.Add(this.TextDate);
             this.panel1.Controls.Add(this.TextBarcode);
+            this.panel1.Controls.Add(this.TextPath);
+            this.panel1.Controls.Add(this.TextVendor);
             this.panel1.Controls.Add(this.TextUnits);
             this.panel1.Controls.Add(this.TextPrice);
+            this.panel1.Controls.Add(this.TextCompany);
             this.panel1.Controls.Add(this.TextModel);
-            this.panel1.Controls.Add(this.companyDropdown);
             this.panel1.Controls.Add(this.LabelDate);
             this.panel1.Controls.Add(this.LabelBarcode);
             this.panel1.Controls.Add(this.LabelNewPhone);
             this.panel1.Controls.Add(this.LabelOldPhone);
             this.panel1.Controls.Add(this.LabelCondition);
+            this.panel1.Controls.Add(this.LabelVendor);
             this.panel1.Controls.Add(this.LabelUnits);
             this.panel1.Controls.Add(this.LabelPrice);
             this.panel1.Controls.Add(this.LabelModel);
@@ -108,6 +114,7 @@
             this.AddBtn.TabIndex = 5;
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // BrowseBtn
             // 
@@ -123,34 +130,38 @@
             this.BrowseBtn.TabIndex = 5;
             this.BrowseBtn.Text = "Browse";
             this.BrowseBtn.UseVisualStyleBackColor = false;
+            this.BrowseBtn.Click += new System.EventHandler(this.BrowseBtn_Click);
             // 
             // PhoneImage
             // 
-            this.PhoneImage.Location = new System.Drawing.Point(489, 54);
+            this.PhoneImage.BackColor = System.Drawing.Color.White;
+            this.PhoneImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.PhoneImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PhoneImage.Location = new System.Drawing.Point(488, 23);
             this.PhoneImage.Name = "PhoneImage";
             this.PhoneImage.Size = new System.Drawing.Size(220, 212);
             this.PhoneImage.TabIndex = 4;
             this.PhoneImage.TabStop = false;
             // 
-            // ComboNewPhone
+            // RadioNewPhone
             // 
-            this.ComboNewPhone.AutoSize = true;
-            this.ComboNewPhone.Location = new System.Drawing.Point(176, 283);
-            this.ComboNewPhone.Name = "ComboNewPhone";
-            this.ComboNewPhone.Size = new System.Drawing.Size(14, 13);
-            this.ComboNewPhone.TabIndex = 3;
-            this.ComboNewPhone.TabStop = true;
-            this.ComboNewPhone.UseVisualStyleBackColor = true;
+            this.RadioNewPhone.AutoSize = true;
+            this.RadioNewPhone.Location = new System.Drawing.Point(176, 283);
+            this.RadioNewPhone.Name = "RadioNewPhone";
+            this.RadioNewPhone.Size = new System.Drawing.Size(14, 13);
+            this.RadioNewPhone.TabIndex = 3;
+            this.RadioNewPhone.TabStop = true;
+            this.RadioNewPhone.UseVisualStyleBackColor = true;
             // 
-            // ComboOldPhone
+            // RadioOldPhone
             // 
-            this.ComboOldPhone.AutoSize = true;
-            this.ComboOldPhone.Location = new System.Drawing.Point(119, 283);
-            this.ComboOldPhone.Name = "ComboOldPhone";
-            this.ComboOldPhone.Size = new System.Drawing.Size(14, 13);
-            this.ComboOldPhone.TabIndex = 3;
-            this.ComboOldPhone.TabStop = true;
-            this.ComboOldPhone.UseVisualStyleBackColor = true;
+            this.RadioOldPhone.AutoSize = true;
+            this.RadioOldPhone.Location = new System.Drawing.Point(119, 283);
+            this.RadioOldPhone.Name = "RadioOldPhone";
+            this.RadioOldPhone.Size = new System.Drawing.Size(14, 13);
+            this.RadioOldPhone.TabIndex = 3;
+            this.RadioOldPhone.TabStop = true;
+            this.RadioOldPhone.UseVisualStyleBackColor = true;
             // 
             // TextDate
             // 
@@ -168,6 +179,14 @@
             this.TextBarcode.Size = new System.Drawing.Size(221, 31);
             this.TextBarcode.TabIndex = 2;
             // 
+            // TextVendor
+            // 
+            this.TextVendor.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextVendor.Location = new System.Drawing.Point(216, 305);
+            this.TextVendor.Name = "TextVendor";
+            this.TextVendor.Size = new System.Drawing.Size(200, 31);
+            this.TextVendor.TabIndex = 2;
+            // 
             // TextUnits
             // 
             this.TextUnits.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,6 +203,14 @@
             this.TextPrice.Size = new System.Drawing.Size(200, 31);
             this.TextPrice.TabIndex = 2;
             // 
+            // TextCompany
+            // 
+            this.TextCompany.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextCompany.Location = new System.Drawing.Point(216, 55);
+            this.TextCompany.Name = "TextCompany";
+            this.TextCompany.Size = new System.Drawing.Size(200, 31);
+            this.TextCompany.TabIndex = 2;
+            // 
             // TextModel
             // 
             this.TextModel.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,15 +218,6 @@
             this.TextModel.Name = "TextModel";
             this.TextModel.Size = new System.Drawing.Size(200, 31);
             this.TextModel.TabIndex = 2;
-            // 
-            // companyDropdown
-            // 
-            this.companyDropdown.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.companyDropdown.FormattingEnabled = true;
-            this.companyDropdown.Location = new System.Drawing.Point(216, 54);
-            this.companyDropdown.Name = "companyDropdown";
-            this.companyDropdown.Size = new System.Drawing.Size(200, 31);
-            this.companyDropdown.TabIndex = 1;
             // 
             // LabelDate
             // 
@@ -255,6 +273,17 @@
             this.LabelCondition.Size = new System.Drawing.Size(90, 23);
             this.LabelCondition.TabIndex = 0;
             this.LabelCondition.Text = "Condition";
+            // 
+            // LabelVendor
+            // 
+            this.LabelVendor.AutoSize = true;
+            this.LabelVendor.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelVendor.ForeColor = System.Drawing.Color.Black;
+            this.LabelVendor.Location = new System.Drawing.Point(66, 313);
+            this.LabelVendor.Name = "LabelVendor";
+            this.LabelVendor.Size = new System.Drawing.Size(73, 23);
+            this.LabelVendor.TabIndex = 0;
+            this.LabelVendor.Text = "Vendor:";
             // 
             // LabelUnits
             // 
@@ -314,6 +343,7 @@
             this.LogOut.TabIndex = 3;
             this.LogOut.Text = "LogOut";
             this.LogOut.UseVisualStyleBackColor = false;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
             // 
             // BackBtn
             // 
@@ -330,6 +360,14 @@
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
+            // TextPath
+            // 
+            this.TextPath.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextPath.Location = new System.Drawing.Point(488, 249);
+            this.TextPath.Name = "TextPath";
+            this.TextPath.Size = new System.Drawing.Size(220, 27);
+            this.TextPath.TabIndex = 2;
             // 
             // AddPhones
             // 
@@ -356,12 +394,11 @@
         private System.Windows.Forms.Label LabelPhones;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox PhoneImage;
-        private System.Windows.Forms.RadioButton ComboNewPhone;
-        private System.Windows.Forms.RadioButton ComboOldPhone;
+        private System.Windows.Forms.RadioButton RadioNewPhone;
+        private System.Windows.Forms.RadioButton RadioOldPhone;
         private System.Windows.Forms.TextBox TextBarcode;
         private System.Windows.Forms.TextBox TextPrice;
         private System.Windows.Forms.TextBox TextModel;
-        private System.Windows.Forms.ComboBox companyDropdown;
         private System.Windows.Forms.Label LabelNewPhone;
         private System.Windows.Forms.Label LabelOldPhone;
         private System.Windows.Forms.Label LabelCondition;
@@ -377,5 +414,9 @@
         private System.Windows.Forms.TextBox TextUnits;
         private System.Windows.Forms.Button LogOut;
         private System.Windows.Forms.Button BackBtn;
+        private System.Windows.Forms.TextBox TextCompany;
+        private System.Windows.Forms.TextBox TextVendor;
+        private System.Windows.Forms.Label LabelVendor;
+        private System.Windows.Forms.TextBox TextPath;
     }
 }
