@@ -101,10 +101,25 @@ namespace YutMobileStore
                     con.Close();
                     ProductListGridView.DataSource = ds;
                     ProductListGridView.DataMember = "cellPhones";
+
+                    con.Open();
+                    
+                    SqlCommand cmd2 = new SqlCommand();
+                    cmd2.Connection = con;
+                    cmd2.CommandText = "SELECT * from transactionLog Where transactionVendor= '" + comboMobileVendor.Text + "'";
+                    cmd2.ExecuteNonQuery();
+                    SqlDataAdapter sda2 = new SqlDataAdapter();
+                    sda2.SelectCommand = cmd2;
+                    DataSet ds1 = new DataSet();
+                    sda2.Fill(ds1, "transactionLog");
+                    con.Close();
+                    TransactionLogGridView.DataSource = ds1;
+                    TransactionLogGridView.DataMember = "transactionLog";
                 }
             }
+           
         }
-
+      
         private void ComboAccessoryVendor_SelectedIndexChanged(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(connectionstring))

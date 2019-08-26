@@ -34,7 +34,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LabelTotal = new System.Windows.Forms.Label();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.TextDate = new System.Windows.Forms.TextBox();
             this.TextVoucher = new System.Windows.Forms.TextBox();
             this.TransactionLogGridView = new System.Windows.Forms.DataGridView();
             this.ProductListGridView = new System.Windows.Forms.DataGridView();
@@ -48,6 +47,7 @@
             this.LabelVendor = new System.Windows.Forms.Label();
             this.LogOut = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
+            this.TransactionDate = new System.Windows.Forms.DateTimePicker();
             this.PanelLedger.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TransactionLogGridView)).BeginInit();
@@ -67,9 +67,9 @@
             // PanelLedger
             // 
             this.PanelLedger.BackColor = System.Drawing.Color.DarkGray;
+            this.PanelLedger.Controls.Add(this.TransactionDate);
             this.PanelLedger.Controls.Add(this.panel1);
             this.PanelLedger.Controls.Add(this.AddBtn);
-            this.PanelLedger.Controls.Add(this.TextDate);
             this.PanelLedger.Controls.Add(this.TextVoucher);
             this.PanelLedger.Controls.Add(this.TransactionLogGridView);
             this.PanelLedger.Controls.Add(this.ProductListGridView);
@@ -128,14 +128,6 @@
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // TextDate
-            // 
-            this.TextDate.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextDate.Location = new System.Drawing.Point(465, 464);
-            this.TextDate.Name = "TextDate";
-            this.TextDate.Size = new System.Drawing.Size(223, 31);
-            this.TextDate.TabIndex = 3;
             // 
             // TextVoucher
             // 
@@ -279,6 +271,15 @@
             this.BackBtn.UseVisualStyleBackColor = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // TransactionDate
+            // 
+            this.TransactionDate.CalendarFont = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransactionDate.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransactionDate.Location = new System.Drawing.Point(465, 468);
+            this.TransactionDate.Name = "TransactionDate";
+            this.TransactionDate.Size = new System.Drawing.Size(200, 27);
+            this.TransactionDate.TabIndex = 8;
+            // 
             // Ledger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,12 +319,12 @@
         private System.Windows.Forms.DataGridView TransactionLogGridView;
         private System.Windows.Forms.Label LabelTransactionLog;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox TextDate;
         private System.Windows.Forms.Label LabelDate;
         private System.Windows.Forms.Label LabelVoucher;
         private System.Windows.Forms.Button LogOut;
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Label LabelMobileVendors;
         private System.Windows.Forms.ComboBox comboMobileVendor;
+        private System.Windows.Forms.DateTimePicker TransactionDate;
     }
 }
